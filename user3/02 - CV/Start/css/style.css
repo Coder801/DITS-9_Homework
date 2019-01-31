@@ -1,0 +1,145 @@
+:root {
+  /* Colors */
+  --primaryColor: #e9776c;
+  --secondaryColor: #2c3e50;
+  --backgroundColor: #f0f4f8;
+  /* Fonts */
+  --robotoFont: 'Roboto', sans-serif;
+  --ralewayFont: 'Raleway', sans-serif;
+}
+h2, h3, p, a, li{
+  font-family: var(--robotoFont);
+}
+h4 {
+  font-family: var(--ralewayFont);
+}
+body {
+  background: #415270;
+}
+.mainarea {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: var(--backgroundColor);
+  min-height: 90vh;
+  padding-bottom: 40px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,.3);
+}
+.mainarea > div {
+  padding: 20px 0;
+}
+
+
+.ava {
+  text-align: center;
+  padding-bottom: 0;
+}
+.ava > img {
+  border-radius: 500px;
+  max-width: 100%;
+  border: 5px solid var(--primaryColor);
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  color: var(--primaryColor);
+  margin-bottom: 0;
+  margin-top: 0px;
+  font-size: 30px;
+}
+.position {
+  margin-top: 10px;
+  font-weight: 300;
+  text-align: center;
+  font-size: 22px;
+  color: var(--secondaryColor);
+}
+
+.title {
+  display: block;
+  background-color: var(--secondaryColor);
+  padding: 8px 10px 6px 15px;
+  border-left: 10px solid var(--primaryColor);
+  box-sizing: border-box;
+  color: white;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+.title.is-arrow:before, .title.is-arrow:after {
+  content: '';
+  width: 20px;
+  height: 50%;
+  right: -9px;
+  position: absolute;
+  background: linear-gradient(270deg, var(--secondaryColor) 0, var(--secondaryColor) 50%, var(--backgroundColor) 50%, var(--backgroundColor) 100%);
+}
+.title.is-arrow:before {
+  top: 0;
+  transform: skewX(45deg);
+}
+.title.is-arrow:after {
+  bottom: 0;
+  transform: skewX(-45deg);
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  line-height: 24px;
+  padding: 5px 0;
+}
+.list li p {
+  margin-top: 0;
+}
+.list li span {
+  font-weight: 100;
+}
+
+.skill {
+  display: block;
+  overflow: hidden;
+}
+.skill > p {
+  width: 65%;
+  float: left;
+  margin: 0;
+}
+.skill > .raiting {
+  float: left;
+  width: 35%;
+  margin-top: 7px;
+}
+.raiting {
+  display: flex;
+  justify-content: space-around;
+}
+.raiting > span {
+  width: 8px;
+  height: 8px;
+  display: block;
+  float: left;
+  border-radius: 10px;
+  border: 1px solid var(--primaryColor);
+}
+.raiting.active_4 > span:nth-child(-n+4) {
+  background-color: var(--primaryColor);
+}
+.raiting.active_5 > span:nth-child(-n+5) {
+  background-color: var(--primaryColor);
+}
+
+.hobbie {
+  text-align: center;
+}
+.hobbie > img {
+  max-width: 50%;
+  display: block;
+  margin: 5px auto 15px auto;
+}

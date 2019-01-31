@@ -1,0 +1,7 @@
+:root {
+  /* Colors */
+  --primaryColor: #0166ff;
+  --secondaryColor: white;
+  --textColor: rgba(152, 152, 152, 1);
+  --headlineColor: var(--secondaryColor);
+}
