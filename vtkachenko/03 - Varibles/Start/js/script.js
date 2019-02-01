@@ -1,5 +1,5 @@
 console.clear();
-
+console.log('hi');
 // ## 0 Подключение файла script.js
 //
 // * Подключите этот файл в index.js
