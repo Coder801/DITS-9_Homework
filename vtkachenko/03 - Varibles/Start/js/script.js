@@ -1,13 +1,10 @@
 console.clear();
-console.log('hi');
+console.log('Hello world')
 // ## 0 Подключение файла script.js
 //
 // * Подключите этот файл в index.js
 // * Что бы проверить подключен ли файл выведете в консоль фразу Hello world!
 
-if(you dot t click === ok){
-     i am not work
-}
 
 // ## 1 Обьявление примитивных переменныx
 //
