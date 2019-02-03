@@ -29,13 +29,13 @@ let e = null;//null
 // Пример вывода в консоли: Square = 18
 
 // * Your code Start *
-let side_a = 7;
-let side_b = 8;
-let side_c = 9;
+let sideA = 7;
+let sideB = 8;
+let sideC = 9;
 
-var perimeter = side_a + side_b + side_c;
+var perimeter = sideA + sideB + sideC;
 poluperimeter = perimeter /2;  
-let radius = Math.sqrt((poluperimeter - side_a)*(poluperimeter - side_b)*(poluperimeter - side_c) / poluperimeter);
+let radius = Math.sqrt((poluperimeter - sideA)*(poluperimeter - sideB)*(poluperimeter - sideC) / poluperimeter);
 
 console.log('Perimeter ='+ perimeter);
 console.log('Poluperimeter ='+poluperimeter);
@@ -89,6 +89,6 @@ console.info(+"");//слева оператор плюс приведение к
 console.info(NaN === NaN); //операторы == === тут не работают поэтому false
 console.info(null == undefined);//так пишут в спецификации  если x = null,а y=undefined вернет true
 console.log(false == 'false');//булевое значение не равно строке
-console.log(' \t\r\n ' == 0); //переводится в число и сравнивает с 0 , а так как не равно значит false
+console.log(' \t\r\n ' == 0); //исключение описанное по этой ссылке https://martin-thoma.com/javascript-wtf/ или как нас учили Ошибка )))
 console.log(-1 == false);// 0  false
 console.log(-1 == true);// отрицательные значения не могут быть true
