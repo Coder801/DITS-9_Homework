@@ -37,12 +37,12 @@ let undef = undefined;
 
 let a = 7, b = 8, c = 9;
 
-let P = {'Perimeter': a + b + c};
-let p = {'Halfperimeter': P.Perimeter / 2};
-let r = {'Radius': (Math.sqrt((p.Halfperimeter - a) * (p.Halfperimeter - b) * (p.Halfperimeter - c) / p.Halfperimeter))};
-let r2 = {'Right triangle radius':(a + b - c) / 2};
+let P = a + b + c;
+let p = P/ 2;
+let r = Math.sqrt((p - a) * (p - b) * (p - c) / p);
+let r2 = (a + b - c) / 2;
 
-console.info(P, p, r, r2);
+console.info('Perimeter = ' + P, ' Halfperimeter = ' + p, ' Radius = ' + r, ' Right triangle radius ' + r2);
 
 // * Your code End *
 
