@@ -15,6 +15,12 @@ console.clear();
 // * Your code Start *
 
 
+let a = 1;
+let b = "Hello World";
+let c = true;
+let d = null;
+let f = {name: "Alex"};
+
 
 // * Your code End *
 
