@@ -81,7 +81,7 @@ console.log(getCircleTriangle());
 // * Your code Start *
 var userEmail = 'gmail';
 var currentDate = '21.12.2015';
-var arrUsers = ['Gudvin', 'Alex', 'Masya'];
+var arr = ['Gudvin', 'Alex', 'Masya'];
 var defaulten = '';
 var rightTopElement = '';
 
@@ -101,7 +101,7 @@ var obj = {
     user: 'Vasya'
 };
 obj.user = 'Petya';
-//выведено в консоль из html
+console.log(obj.user);
 
 
 // * Your code End *
@@ -119,8 +119,9 @@ console.info(15 / 0); //при делении на 0
 console.info(4 + 5 + "px"); //
 console.info(+""); // пустая строка, выводит ноль
 console.info(NaN === NaN); // строгое стравнение
-console.info(null == undefined); //правило
+console.info(null == undefined); //Значения null и undefined равны == друг другу и не равны чему бы то ни было ещё. Это жёсткое правило буквально прописано в спецификации языка.
 console.log(false == 'false'); //сравнение со строкой
-console.log(' \t\r\n ' == 0); //?
-console.log(-1 == false); //число
-console.log(-1 == true); //число
+console.log(' \t\r\n ' == 0); //особенность, ссылка на отличную табличку (спасибо Славе))https://martin-thoma.com/javascript-wtf/
+console.log(-1 == false); // -1 не равно 0, поэтому false
+console.log(-1 == true); //-1 не равно 1, false
+
