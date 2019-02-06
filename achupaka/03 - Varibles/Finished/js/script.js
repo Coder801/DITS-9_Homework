@@ -14,9 +14,9 @@ console.log('Hello world')
 
 // * Your code Start *
 var a = 1;
-var b = null/NaN;
+var b = null;
 var c = 'string';
-var d = true/false;
+var d = true;
 var e = undefined;
 // * Your code End *
 
@@ -59,11 +59,11 @@ console.info('Найдите радиус вписанной окружност�
 // * Переменная которая описывала значение правой верхней границы условного html элемента
 
 // * Your code Start *
-var someEmail
-var someData
+var userEmail
+var todayData
 var arrUser
-var sameDefolt
-var someRightHtml
+var thisDefolt
+var useRightHtml
 // * Your code End *
 
 
@@ -86,16 +86,16 @@ console.log(userName.name);
 //
 // Обьясните почему консоль выводит такой результат. Ответ запишите в комментарии напротив строки
 
-console.info('6' - 3);
-console.info('20' + 10);
-console.info('10' + - 2);
-console.info("4px" - 2);
-console.info(15 / 0);
-console.info(4 + 5 + "px");
-console.info(+"");
-console.info(NaN === NaN);
-console.info(null == undefined);
-console.log(false == 'false');
-console.log(' \t\r\n ' == 0);
-console.log(-1 == false);
-console.log(-1 == true);
+console.info('6' - 3);//"3" приводит строку к числу
+console.info('20' + 10);//'2010' конкатенация
+console.info('10' + - 2);//'10-2'конкатенация
+console.info("4px" - 2);//NaN - 4px не число
+console.info(15 / 0);//инфинити, в js так)
+console.info(4 + 5 + "px");//9px конкатенация
+console.info(+"");//'0' унарный плюс преобразовывает пустую строку в число
+console.info(NaN === NaN);// false, Операторы равенства (== и ===) не могут использоваться для проверки значения на равенство NaN
+console.info(null == undefined);// "true" Значения null и undefined равны == друг другу и не равны ничему другому.
+console.log(false == 'false');//'false' первое булеан, вторая строка.
+console.log(' \t\r\n ' == 0);//фальш, тагоша в табличке так, исключение так сказать.
+console.log(-1 == false);//Тагоша фальш это 0
+console.log(-1 == true);// Тагоша тру єто 1
